@@ -53,3 +53,8 @@ max - the maximum value.
 #subsetting using isin function
 1. df['column1'].isin(['value 1', 'value 2']) - returns rows in True or False
 2. df[def['column1'].isin(['value 1', 'value 2'])] - returns rows of column1 with value 1 and value 2
+
+- df.column1.unique() - returns all the unique values in column1
+- df.column1.replace([value1, value2],[newvalue1, newvalue2]) - replaces values
+- new_df= df.drop('column1',axis=1) - deletes column1 from df. axis=1 when working with the column, axis=0 when working with rows.
+- df = pd.concat([new_df, df], axis=1) - adds a new column to df
